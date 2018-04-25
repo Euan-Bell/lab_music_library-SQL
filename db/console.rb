@@ -13,7 +13,19 @@ album1 = Album.new({
   })
 album1.save
 
+album2 = Album.new({
+  'artist_id' => artist1.id,
+  'title' => 'Humbug',
+  'genre' => 'indie'
+  })
+album2.save
 
+album3 = Album.new({
+  'artist_id' => artist1.id,
+  'title' => 'Favourite Worst Nightmare',
+  'genre' => 'indie'
+  })
+album3.save
 
 
 binding.pry
